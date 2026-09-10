@@ -1,0 +1,38 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  OUTPUT_DIR: './output'
+  INPUT_FILE: 'resume.yml'
+  CURRENT_DATE:
+    sh: date +%Y%m%d
+  RENAMED_PDF: 'conor-manning{{ .CURRENT_DATE}}.pdf'
+
+tasks:
+  rename:
+    desc: Renames the generated pdf to match a better output
+    cmds:
+      - cp {{ .OUTPUT_DIR }}/{{ .INPUT_FILE | replace "yml" "pdf" }} {{ .OUTPUT_DIR }}/{{ .RENAMED_PDF }}
+    internal: true
+
+  build:
+    desc: Build the test bitbucket image
+    cmds:
+      - docker run --rm -v $(pwd):/home/yamlresume yamlresume/yamlresume build {{ .INPUT_FILE }} -o {{ .OUTPUT_DIR }}
+      - task: rename
+
+  create:
+    desc: Starts a new resume
+    cmds:
+      - docker run --rm -v $(pwd):/home/yamlresume yamlresume/yamlresume new new-resume.yml
+
+  backup:
+    desc: Create a backup of the resume
+    cmds:
+      - cp {{ .OUTPUT_DIR }}/{{ .RENAMED_PDF }} {{ .OUTPUT_DIR }}/{{ .RENAMED_PDF }}.bak
+
+  validate:
+    desc: Validates the yml resume
+    cmds:
+      - docker run --rm -v $(pwd):/home/yamlresume yamlresume/yamlresume validate {{ .INPUT_FILE }}

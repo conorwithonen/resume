@@ -1,0 +1,7 @@
+# Rendered files
+output/*
+!output/.gitkeep
+!output/conor*.pdf
+
+# yamlresume hidden dirs, .cache, .textlive2022, etc...
+.*/*

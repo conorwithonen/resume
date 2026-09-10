@@ -1,0 +1,218 @@
+# yaml-language-server: $schema=https://yamlresume.dev/schema.json
+#
+# YAMLResume resume sourced from https://www.linkedin.com/in/conor-manning13
+# Schema: https://yamlresume.dev/docs/compiler/schema
+
+---
+content:
+  basics:
+    name: Conor Manning
+    headline: Sr. DevOps Engineer
+    url: https://conormanning.com
+    email: conor@conormanning.com
+    summary: |
+      - Data-driven and organized person who loves automation, software development, and passing builds.
+      - Adept at technical troubleshooting and problem solving, both in and out of the incident bridge.
+      - Experienced with configuration management tools and how to utilize them with proper IaC practices.
+      - Team player with an agile mindset and a keen eye for security, risk management, compliance, and efficiency.
+  location:
+    city: Austin
+    region: Texas
+    country: United States
+  profiles:
+    - network: LinkedIn
+      username: conor-manning13
+      url: https://www.linkedin.com/in/conor-manning13
+    - network: GitHub
+      username: conorwithonen
+      url: https://github.com/conorwithonen
+  work:
+    - name: Funko
+      position: Lead DevOps Engineer
+      url: https://funko.com
+      startDate: Jun 1, 2025
+      summary: |
+        - Leads a DevOps team of 3 supporting multiple websites that collectively generated $920M+ in reported net sales in 2025.
+        - Built and maintained scalable AWS and Datadog foundations to support peak collectible demand cycles and DTC growth priorities highlighted in company earnings updates.
+        - Partnered on cost and efficiency initiatives during tariff-driven headwinds in 2025, helping engineering teams maintain delivery while the business managed margin pressure.
+        - Helped design and build Funko's event-driven architecture.
+      keywords:
+        - AWS
+        - Terraform
+        - Cloudflare
+        - Datadog
+    - name: Funko
+      position: DevOps Engineer
+      startDate: Mar 1, 2024
+      endDate: Jun 1, 2025
+      summary: |
+        - Supported the development teams in releasing Funko’s mobile app version 8.0 which introduced commerce functionality.
+        - Worked with the team overhauling funko’s IaC architecture in Terraform and Puppet.
+        - Designed and built code that introduced event-driven architecture into Funko’s commerce integrations.
+      keywords:
+        - ECS
+        - Docker Swarm
+        - Terraform
+        - SSL Certificates
+    - name: Funko
+      position: System Analyst
+      startDate: Jan 1, 2023
+      endDate: Mar 1, 2024
+      summary: |
+        - Continued supporting the Mondo team as they transitioned into the larger Funko organization.
+        - Quickly and efficiently learned the legacy technologies that power funko.com & loungefly.com as well as how to maintain legacy systems with updates and patches needed in standard KTLO practices.
+      keywords:
+        - Cloudflare
+        - AWS
+        - Bash
+    - name: Mondo
+      position: DevOps Analyst
+      url: https://mondoshop.com
+      startDate: Jun 1, 2017
+      endDate: Jan 1, 2023
+      summary: |
+        - Solo managed all website, networking, and development needs for mondoshop.com for multiple years until Funko aquired the site.
+      keywords:
+        - Python
+        - Node.js
+        - LiquidJS
+    #   # Not necessarily relevant. Uncomment to render experience
+    # - name: Alamo Drafthouse Cinemas
+    #   position: Audio Video Engineer
+    #   url: https://drafthouse.com
+    #   startDate: May 1, 2017
+    #   endDate: Jan 1, 2019
+    #   summary: |
+    #     - House engineer for all live bands, corporate events, etc...
+    # - name: AquaBrew
+    #   position: Live Sound Engineer
+    #   startDate: Mar 1, 2016
+    #   endDate: May 1, 2017
+    #   summary: |
+    #     Live sound engineer in San Marcos, TX. Responsible for sound setup, mixing, and live sound engineering for venue events.
+    # - name: Red Lobster
+    #   position: Culinary Professional
+    #   url: https://www.redlobster.com
+    #   startDate: Mar 1, 2013
+    #   endDate: Mar 1, 2016
+    #   summary: |
+    #     Culinary professional supporting restaurant operations, production, and food service procedures.
+  education:
+    - institution: Austin Community College
+      url: https://www.austincc.edu
+      degree: Bachelor
+      area: Software Development
+      startDate: Jan  2022
+      endDate:
+      summary: |
+        - Returned to school to work on a degree that was applicable to the job I had been doing.
+    - institution: Texas State University
+      url: https://www.txst.edu
+      degree: Bachelor
+      area: Sound Recording Technology
+      startDate: Aug 2012
+      endDate: Dec 2014
+      summary: |
+        - Gained connections for the audio engineering jobs in the area.
+        - Left school early to work in a recording sudio and do freelance live sound.
+  skills:
+    - name: Container Orchestration
+      level: Expert
+      keywords:
+        - Docker / Docker Swarm
+        - ECS
+        - YAML
+        - Terraform
+        - Networking
+    - name: DevOps
+      level: Expert
+      keywords:
+        - Python
+        - CI/CD
+        - Puppet
+        - Shell
+        - Ansible
+        - Linux
+    - name: Networking
+      level: Advanced
+      keywords:
+        - NGINX
+        - TLS/SSL
+        - DNS
+  projects:
+    - name: SNL Analysis
+      url: https://github.com/conorwithonen/snl
+      description: Historical analysis of days between SNL episodes
+      startDate: Dec 2025
+      endDate: Dec 2025
+      summary: |
+        - A data analysis project I did in order to win an argument.
+        - Practice to follow code and commit cleanliness
+        - General python profficiency
+      keywords:
+        - Python
+        - Rest API
+        - Jupyter Notebook
+        - Education
+  references:
+    - name: Chris Sinclair
+      email: chris.sinclair@funko.com
+      relationship: Current Manager
+      summary: Sr. Director, Digital Engineering
+    - name: Bob Fulkerson
+      email: bob.fulkerson@bigbadtoystore.com
+      relationship: Previous Manager
+      summary: Summary text to show something
+  languages:
+    - language: English
+      fluency: Native or Bilingual Proficiency
+    - language: Spanish
+      fluency: Elementary Proficiency
+  interests:
+    - name: Tech
+      keywords:
+        - Homelab
+        - LetsEncrypt
+        - DNS
+        - Security
+        - NixOS
+        - Ansible
+        - Docker
+    - name: Media
+      keywords:
+        - Music
+        - Horror Movies
+    - name: Sports
+      keywords:
+        - Hockey
+        - Soccer
+    - name: Food
+      keywords:
+        - Cooking
+        - Documenting Food
+locale:
+  language: en
+layouts:
+  - engine: latex
+    sections: # Use aliases block if ever needing to rename sections
+      order:
+        - basics
+        - work
+        - skills
+        - projects
+        - references
+        - education
+        - languages
+        - interests
+        - volunteer #TODO: Get more volunteer work
+    # moderncv-banking, moderncv-casual, moderncv-classic, jake
+    template: moderncv-banking
+    page:
+      paperSize: letter
+    typography:
+      fontSize: 12pt
+  - engine: markdown
+  - engine: html
+    template: vscode
+    typography:
+      fontSize: 16px
