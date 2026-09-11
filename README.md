@@ -1,6 +1,6 @@
 # Conor Manning's Resume
 
-My resume, as code and tracked in git.
+My resume, as code, tracked in git.
 
 
 ## Why?
@@ -12,7 +12,7 @@ It seemed like a perfect fit for someone who worked as a DevOps Engineer.
 ### Prerequisites
 If you are just looking for my resume to look at, then you need not go any further. A current version of ![my resume](./current.pdf) can be found in this repository.
 
-If you came to snoop and would like to build my resume yourself, then you will either need one of the following:
+If you came to snoop and would like to build my resume yourself, then you will either need the following:
 - Docker V23 or higher
 - [Task](https://taskfile.dev/)
 - This repository
@@ -30,8 +30,6 @@ task build
 This will generate a new PDF file in ./output/ with the format `conor-manningYYYYMMDD.pdf` that can be opened in your favorite pdf viewer.
 
 ## Validating the Resume YAML
-
-Explain what these tests test and why
 
 ```sh
 task validate

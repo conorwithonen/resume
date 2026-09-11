@@ -147,8 +147,8 @@ content:
       endDate: Dec 2025
       summary: |
         - A data analysis project I did in order to win an argument.
-        - Practice to follow code and commit cleanliness
-        - General python profficiency
+        - Practice to follow code and commit cleanliness.
+        - General python profficiency.
       keywords:
         - Python
         - Rest API
@@ -194,7 +194,10 @@ locale:
   language: en
 layouts:
   - engine: latex
-    sections: # Use aliases block if ever needing to rename sections
+    sections:
+      # # Use aliases block to rename section headers
+      # aliases:
+      #   basics: "About Me"
       order:
         - basics
         - work
