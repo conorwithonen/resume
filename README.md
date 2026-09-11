@@ -17,8 +17,8 @@ If you came to snoop and would like to build my resume yourself, then you will e
 - [Task](https://taskfile.dev/)
 - This repository
 ```
-git clone https://github.com/conorwithonen/cv.git conormanning-cv
-cd conormanning-cv
+git clone https://github.com/conorwithonen/resume.git conormanning-resume
+cd conormanning-resume
 ```
 
 ### Building via Task
